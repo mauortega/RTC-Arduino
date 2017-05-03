@@ -1,5 +1,5 @@
 #include <Wire.h>
-#include <RTC.h>
+#include <RTClib.h>
 
 RTC_Millis rtc;
 const int CIRC1 = 8;
