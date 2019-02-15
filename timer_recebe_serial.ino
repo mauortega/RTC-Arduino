@@ -1,3 +1,11 @@
+/*
+Código de exemplo de como receber os horas e minutos via serial.
+Exemplo:
+L0900 (Liga as 09:00 da manhã)
+D0943 (Desliga as 09:43 da manhã)
+Obs. tem que ter um caracter de terminação "\n" (NewLine)
+*/
+
 #include <Wire.h>
 #include <RTClib.h>
 
