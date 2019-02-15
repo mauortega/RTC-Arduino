@@ -117,9 +117,9 @@ int leSerial() {
       }
     } while ((chr1 != '\n') && ((millis() - timeout) < tempo/*ms*/));
 
-    if ((millis() - timeout) > tempo/*ms*/ || (chr1 != '\n'))// Se  acontecer timeout limpa os dados
-    {
-      str1 = "";
+    if ((millis() - timeout) > tempo/*ms*/ || (chr1 != '\n'))//Se acontecer um timeout ou não tiver o caractere de terminação,   
+    {                                                        //limpar os dados recebidos
+      str1 = "";                                              
       Serial.println("TimeOUT");
     }
 
